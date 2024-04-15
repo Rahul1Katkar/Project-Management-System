@@ -1,0 +1,38 @@
+ 
+<table>
+    <tr>
+        <td>SN</td>
+    <td>projectname</td>
+    <td>reason</td>
+    <td>type</td>
+    <td>catagery</td>
+    <td>division</td>
+    <td>startdate</td>
+    <td>enddate</td>
+    <td>location</td>
+    <td>status</td>
+    <td>action</td>
+    </tr>
+    <tr *ngFor="let project of project, let i=index">
+     
+    <td>{{project.id}}</td>
+    <td>{{project.projectname}}</td>
+    <td>{{project.reason}}</td>
+    <td>{{project.type}}</td>
+    <td>{{project.catagery}}</td>
+    <td>{{project.division}}</td>
+    <td>{{project.startdate}}</td>
+    <td>{{project.enddate}}</td>
+    <td>{{project.location}}</td>
+    <td>{{project.status}}</td>
+
+    <td>
+        
+        <button (click)="checkstatusstart(project.id)">start</button>
+        <button (click)="checkstatusclose(project.id)">close</button>
+        <button (click)="checkstatusclear(project.id)">clear</button>
+    </td>
+     
+
+</tr>
+</table>

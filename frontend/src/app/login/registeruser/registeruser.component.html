@@ -1,0 +1,18 @@
+ 
+<form  >
+    <label>
+      Name:
+      <input type="text" name="name" [(ngModel)]="register.name" required>
+    </label>
+    <label>
+      Email:
+      <input type="email" name="email" [(ngModel)]="register.email" required>
+    </label>
+    <label>
+      Password:
+      <input type="password" name="password" [(ngModel)]="register.password" required>
+    </label>
+    <button  (click)="addregister()">Register</button>
+  </form>
+  
+  

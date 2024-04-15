@@ -1,0 +1,25 @@
+ 
+<button (click)="show(1)">Add Project</button>
+<button (click)="show(2)">Show project</button>
+<button (click)="show(3)">dashboard</button>
+
+<div *ngIf="ToShow==1">
+<app-addproject></app-addproject>
+</div>
+<div *ngIf="ToShow==2">
+    <app-saveproject></app-saveproject>
+</div>
+
+    
+    
+    <!-- <div *ngIf="ToShow==3"> -->
+    <h3>Toatal Project:{{count.totalcnt}}</h3>
+    <h3>Close Project:{{count.closecnt}}</h3>
+    <h3>Running Project:{{count.runningcnt}}</h3>
+    <h3>Cancel Project:{{count.cancelcnt}}</h3>
+    <!-- </div> -->
+
+
+
+
+

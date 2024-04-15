@@ -1,0 +1,58 @@
+ 
+<h3>addproject here</h3>
+projectname
+<input type="text" [(ngModel)]="project.projectname"><br>
+reason
+<select [(ngModel)]="project.reason" >
+    <option >select</option>
+    <option value="forbusiness">business</option>
+    <option value="delaership">delaership</option>
+    <option value="transport">transport</option>
+
+</select><br>
+type
+<select [(ngModel)]="project.type" >
+    <option >select</option>
+    <option value="internal">internal</option>
+    <option value="external">external</option>
+    <option value="vendor">vendor</option>
+
+</select><br>
+ division
+ <select [(ngModel)]="project.division" >
+    <option >select</option>
+    <option value="compressor">compressor</option>
+    <option value="filter">filter</option>
+    <option value="glass">glass</option>
+    <option value="pump">pump</option>
+</select><br>
+catagery
+<select [(ngModel)]="project.catagery" >
+    <option >select</option>
+    <option value="qualityA">qualityA</option>
+    <option value="qualityB">qualityB</option>
+    <option value="qualityC">qualityC</option>
+     
+</select><br>
+startdate
+<input type="date" [(ngModel)]="project.startdate"><br>
+enddate
+<input type="date" [(ngModel)]="project.enddate"><br>
+location
+<select [(ngModel)]="project.location" >
+    <option >select</option>
+    <option value="pune">pune</option>
+    <option value="mumbai">mumbai</option>
+    <option value="nagpur">nagpur</option>
+     
+</select><br>
+status
+{{statusvar}}
+
+<br>
+<button (click)="addproject()">add</button>
+
+
+
+
+

@@ -1,0 +1,17 @@
+ 
+<div *ngIf="cnt==0" >
+  <label>
+    Email:
+    <input type="email" name="email" [(ngModel)]="register.email">
+  </label>
+  <label>
+    Password:
+    <input type="password" name="password" [(ngModel)]="register.password" >
+  </label>
+  <button (click)="submit()">Login</button>
+</div>
+
+<div *ngIf="cnt==1">
+<app-dashboard></app-dashboard>
+</div>
+ 
